@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -9,7 +9,7 @@ internal sealed class CPersonData
     public string Degree { get; set; }
     private string PId { get; set; }
     private int Salary { get; set; }
-
+    #region constructor
     // 預設建構函式
     public CPersonData()
     {
@@ -27,7 +27,7 @@ internal sealed class CPersonData
         PId = pId;
         Salary = salary;
     }
-
+    #endregion
     internal int GetSalary()
     {
         return Salary;
